@@ -4,7 +4,7 @@ This example shows how to embed Python into Go using MetaCall inside an HTTP ser
 
 ## Dependencies
 
-For building this example you need NodeJS to be installed in the system (12.x has been tested). For debian based distros:
+For building this example you need Python to be installed in the system (3.9 has been tested). For debian based distros:
 
 ```bash
 sudo apt-get install -y --no-install-recommends build-essential cmake ca-certificates git python3 python3-dev python3-pip
