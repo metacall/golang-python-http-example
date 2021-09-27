@@ -42,14 +42,13 @@ RUN apt-get update \
 WORKDIR /root
 
 # Clone and build the project
-RUN git clone --branch v0.5.3 https://github.com/metacall/core \
+RUN git clone --branch v0.5.4 https://github.com/metacall/core \
 	&& mkdir core/build && cd core/build \
 	&& cmake \
 		-DNODEJS_CMAKE_DEBUG=On \
 		-DOPTION_BUILD_LOADERS_PY=On \
 		-DOPTION_BUILD_PORTS=On \
 		-DOPTION_BUILD_PORTS_PY=On \
-		-DOPTION_BUILD_PORTS_NODE=Off \
 		-DOPTION_BUILD_DETOURS=Off \
 		-DOPTION_BUILD_SCRIPTS=Off \
 		-DOPTION_BUILD_TESTS=Off \
